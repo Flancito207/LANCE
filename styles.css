@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.navbar ul li {
+  margin: 0 1em;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #0055aa;
+}
+
+/* Carrusel */
+.carrusel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+.carrusel-slide {
+  display: none;
+}
+
+.carrusel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* efecto fade */
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* puntos indicadores */
+.carrusel-dots {
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #003366;
+}
+
+/* Sección información general */
+.info-general {
+  max-width: 1000px;
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 0 1em;
+}
+
+.info-box {
+  background-color: #e6f0fa;
+  padding: 1.5em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Secciones con fondo blanco */
+.seccion-blanca {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+/* Sección contacto */
+.seccion-contacto {
+  background-color: #e6f0fa;
+  padding: 2em 1em;
+  text-align: center;
+  color: #003366;
+}
+
+/* Pie de página */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 2em 1em;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-text {
+  flex: 1 1 300px;
+}
+
+.footer-map {
+  flex: 1 1 300px;
+  margin-top: 1em;
+}
+
+/* Botón ir arriba */
+#btnArriba {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: #003366;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0.7em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#btnArriba:hover {
+  opacity: 1;
+}
+
+/* Para responsividad (opcional ajustes) */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-map {
+    margin-top: 1em;
+  }
+}

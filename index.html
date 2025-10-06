@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LANCE — Observatorio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#informacion">Información</a></li>
+        <li><a href="#investigacion">Investigación</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="carrusel-container">
+    <div class="carrusel-slide fade">
+      <img src="img/car1.jpeg" alt="Imagen 1" />
+    </div>
+    <div class="carrusel-slide fade">
+      <img src="img/car2.jpg" alt="Imagen 2" />
+    </div>
+    <div class="carrusel-slide fade">
+      <img src="img/car3.jpg" alt="Imagen 3" />
+    </div>
+
+    <div class="carrusel-dots">
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+    </div>
+  </section>
+
+  <section id="informacion" class="info-general">
+    <div class="info-box">
+      <h3>¿Quiénes somos?</h3>
+      <p>Descripción breve del observatorio, misión, visión.</p>
+    </div>
+    <div class="info-box">
+      <h3>Objetivos</h3>
+      <p>Objetivos de investigación y difusión.</p>
+    </div>
+    <div class="info-box">
+      <h3>Equipo</h3>
+      <p>Investigadores, técnicos, colaboradores.</p>
+    </div>
+    <div class="info-box">
+      <h3>Infraestructura</h3>
+      <p>Instrumentos, localización, instalaciones.</p>
+    </div>
+  </section>
+
+  <section id="investigacion" class="seccion-blanca">
+    <h2>Investigación</h2>
+    <p>Contenido de investigación del observatorio.</p>
+  </section>
+
+  <section id="servicios" class="seccion-blanca">
+    <h2>Servicios</h2>
+    <p>Servicios disponibles (difusión, datos, talleres, etc.).</p>
+  </section>
+
+  <section id="contacto" class="seccion-contacto">
+    <h2>Contacto</h2>
+    <p>Correo: contacto@lance.org</p>
+    <p>Teléfono: +52 123 456 7890</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        <p>© 2025 LANCE | Todos los derechos reservados</p>
+        <p>Contacto: contacto@lance.org</p>
+      </div>
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.4402619247476!2d-99.89751548449732!3d24.75521020000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867cfd9e57487a2d%3A0x544b71815f01a04!2sObservatorio%20Astron%C3%B3mico%20Universitario!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+          width="300"
+          height="200"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btnArriba" title="Ir arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
