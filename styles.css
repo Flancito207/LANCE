@@ -181,3 +181,46 @@ footer {
     margin-top: 1em;
   }
 }
+
+/* Pósters */
+.grid-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.poster-card {
+  background-color: #e6f0fa;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.poster-card iframe {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  background-color: #fff;
+}
+
+.poster-card h4 {
+  margin: 0.5em 0;
+  color: #003366;
+}
+
+.poster-card .boton {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #003366;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.poster-card .boton:hover {
+  background-color: #0055aa;
+}
